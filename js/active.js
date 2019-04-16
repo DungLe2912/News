@@ -172,5 +172,49 @@
     if (browserWindow.width() > 767) {
         new WOW().init();
     }
+    $("#tagidCul").mouseenter(function(){
+        $("#defaulttag").hide();
+        $("#tagdivCul").show();
+        $("#tagdivPol").hide();
+        $("#tagdivSci").hide();
+        $("#tagdivEco").hide();
+        $("#tagdivMil").hide();
+   });
+    $("#tagidPol").mouseenter(function(){
+        $("#defaulttag").hide();
+        $("#tagdivCul").hide();
+        $("#tagdivPol").show();
+        $("#tagdivSci").hide();
+        $("#tagdivEco").hide();
+        $("#tagdivMil").hide();
+   });
+
+    $("#tagidSci").mouseenter(function(){
+        $("#defaulttag").hide();
+        $("#tagdivCul").hide();
+        $("#tagdivPol").hide();
+        $("#tagdivSci").show();
+        $("#tagdivEco").hide();
+        $("#tagdivMil").hide();
+    });
+    $("#tagidEco").mouseenter(function(){
+        $("#defaulttag").hide();
+        $("#tagdivCul").hide();
+        $("#tagdivPol").hide();
+        $("#tagdivSci").hide();
+        $("#tagdivEco").show();
+        $("#tagdivMil").hide();
+   });
+    $("#tagidMil").mouseenter(function(){
+        $("#defaulttag").hide();
+        $("#tagdivCul").hide();
+        $("#tagdivPol").hide();
+        $("#tagdivSci").hide();
+        $("#tagdivEco").hide();
+        $("#tagdivMil").show();
+   });
+
+
+
 
 })(jQuery);
