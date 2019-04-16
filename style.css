@@ -2238,7 +2238,7 @@ h5.roboto-font-bold{
   }
   a.slideCategoryButton.btn{
     background: rgba(255, 255, 255, 0.4);
-    color: white !important;
+    color: white;
     font-size: 14px;
     margin-bottom: 16px;
   }
@@ -2262,14 +2262,15 @@ h5.roboto-font-bold{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
-#readMore{
-  font-size: 16px;
-  
-  color: white;
+#readMore a{
+  margin-left: 10px;
+  font-size: 14px;
+  color: #d1d1d1;
+  font-style: italic;
   cursor: pointer;
 }
-#readMore:hover{
-  color: red;
+#readMore  a:hover{
+  color: white;
   font-style: italic;
 }
 #hoverid li:hover{
