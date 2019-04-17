@@ -2263,15 +2263,15 @@ h5.roboto-font-bold{
     font-weight: bold;
 }
 #readMore{
-  font-size: 16px;
-  
+  font-size: 14px;
   color: white;
   cursor: pointer;
+  font-style: italic;
 }
 #readMore:hover{
-  color: red;
+  color: #de3939;
   font-style: italic;
 }
 #hoverid li:hover{
-  background-color: #7BEF96;
+  background-color: #dfe6e9;
 }
