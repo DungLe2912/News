@@ -3399,10 +3399,101 @@ a.btn.my-group-btn:hover::after {
     height: 100%;
 }
 
+.w3layoutscontaineragileits {
+    margin: 10px;
+    width: 40%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    text-align: center;
+    box-shadow: 5px 5px 5px #666;
+    background-color: #FFFFFF;
+    height: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
 
-/* button.btn.my-group-btn:hover::after {
-    background: none;
-    text-transform: uppercase;
+.btn-danger {
+    margin-top: 5px;
+    height: 35px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"]+label {
+    float: left;
+    margin-left: 10%;
+    color: #888;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 15px 10px 15px;
+    font-size: 14px;
+    background: transparent;
+    border: 2px solid #ddd;
+    outline: none;
+    margin-bottom: 26px;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.login-social-item {
+    font-size: 20px;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    margin-top: 25px;
+}
+
+.custom-control-a {
+    float: right;
+    margin-right: 10%;
+}
+
+.custom-control-a:hover {
     color: #fa8231;
-    border-bottom: 4px solid #fa8231;
-} */
+}
+
+.w3_play_icon1:hover {
+    color: #fa8231;
+}
+
+.login-social-item:hover {
+    font-size: 20px;
+    color: white;
+    background: #404040;
+}
+
+.login-social-item:focus {
+    font-size: 20px;
+    color: white;
+    background: #404040;
+}
+
+.bg1 {
+    background-color: #3b5998
+}
+
+.bg2 {
+    background-color: #1da1f2
+}
+
+.bg3 {
+    background-color: #ea4335
+}
+
+.bg4 {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
