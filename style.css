@@ -2022,6 +2022,7 @@ input:focus {
     flex: 0 0 40%;
     max-width: 40%;
     width: 40%;
+    height: 250px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -3256,12 +3257,24 @@ textarea.form-control {
 
 /* SLIDER */
 
+.slide-area {
+    position: relative;
+}
+
+.vizew-nav-tab {
+    background: #1a1a1a;
+    color: white;
+    height: 400px;
+}
+
 .carousel-item {
     height: 100vh;
     min-height: 300px;
     background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    background-size: cover;
+    /* -webkit-background-size: cover;
+    background-size: cover; */
+    height: 400px;
+    cursor: pointer;
 }
 
 .carou {
@@ -3280,6 +3293,7 @@ textarea.form-control {
 
 h5.tittle {
     font-size: 36px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #B7BDBF;
 }
 
@@ -3353,7 +3367,7 @@ a.slideCategoryButton.btn:hover {
     padding: 10px 60px;
     font-size: 18px;
     color: white;
-    background-color: #fa8231;
+    background: #fa8231;
 }
 
 .load-more:hover {
@@ -3399,7 +3413,6 @@ a.btn.my-group-btn:hover::after {
     height: 100%;
 }
 
-/* Code css cho phần sign in - sign up*/
 .w3layoutscontaineragileits {
     margin: 10px;
     width: 40%;
@@ -3414,6 +3427,12 @@ a.btn.my-group-btn:hover::after {
     margin-bottom: 50px;
 }
 
+.btn-danger {
+    margin-top: 5px;
+    height: 35px;
+    width: 100px;
+    margin-bottom: 20px;
+}
 
 input[type="checkbox"]+label {
     float: left;
@@ -3492,16 +3511,3 @@ input[type="email"] {
 .bg4 {
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
-
-#exampleInputEmail
-{
-    width: 60%;
-    float: left;
-}
-
-#button{
-    width: 35%;
-    float: right;
-    text-align: center;
-}
-/*End code css cho sign in, sign up*/
