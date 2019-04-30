@@ -212,5 +212,50 @@
         $("#tagdivEco").hide();
         $("#tagdivMil").show();
     });
+    $("#postcatagory").change(function(){
+        if($(this).val() =="culture"){
+        $("#culture").show();
+        $("#politics").hide();
+        $("#science").hide();
+        $("#economy").hide();
+        $("#military").hide();
+    }
+     else if($(this).val() =="politics"){
+        $("#culture").hide();
+        $("#politics").show();
+        $("#science").hide();
+        $("#economy").hide();
+        $("#military").hide();
+    }
+     else if($(this).val() =="science"){
+       $("#culture").hide();
+        $("#politics").hide();
+        $("#science").show();
+        $("#economy").hide();
+        $("#military").hide();
+    }
+     else if($(this).val() =="economy"){
+        $("#culture").hide();
+        $("#politics").hide();
+        $("#science").hide();
+        $("#economy").show();
+        $("#military").hide();
+    }
+     else if($(this).val() =="military"){
+        $("#culture").hide();
+        $("#politics").hide();
+        $("#science").hide();
+        $("#economy").hide();
+        $("#military").show();
+    }
+   
+
+    });
+    
+     $("#culture").show();
+        $("#politics").hide();
+        $("#science").hide();
+        $("#economy").hide();
+        $("#military").hide();
 
 })(jQuery);
