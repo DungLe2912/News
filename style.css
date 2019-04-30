@@ -3511,3 +3511,51 @@ input[type="email"] {
 .bg4 {
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
+
+#exampleInputEmail
+{
+    width: 60%;
+    float: left;
+}
+
+#button{
+    width: 35%;
+    float: right;
+    text-align: center;
+}
+/*End code css cho sign in, sign up*/
+
+/*Code cho edit-info*/
+
+.side-bar{
+    width: 200px;
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+    float: left;
+    margin-top: 50px;
+    margin-left: 15px;
+    position: fixed;
+}
+.menu-content ul {
+    background: #f2f4f5  ;   
+}
+.menu-content ul li{
+    border-bottom: 2px solid #e8e8e8;
+     height: 50px;
+    line-height: 50px;
+}
+.menu-content ul li a{
+    width: auto;    
+    color: #000;
+    margin:0;
+    display: block;
+}
+
+.menu-content ul li a:hover{
+    background-color: #CDE2CD;
+   
+}
+
+.title-menu{
+    margin-bottom: 10px;
+}
