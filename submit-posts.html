@@ -16,6 +16,7 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
 
 </head>
 
@@ -293,10 +294,12 @@
                                     <label for="upload-file">Post Title</label>
                                     <input type="text" class="form-control" name="video-name">
                                 </div>
-                                <div class="form-group">
-                                    <label for="upload-file">Content</label>
-                                    <textarea name="video-description" class="form-control" cols="30" rows="10"></textarea>
-                                </div>
+                                <form>
+                                    <textarea name="editor1" id="editor1" rows="10" cols="80"></textarea>
+                                    <script>
+                                      CKEDITOR.replace( 'editor1' );
+                                    </script>
+                                </form>
                                  <div class="form-group">
                                     <label for="upload-file">Catagory</label>
                                     <select id="postcatagory" name="post-catagory" class="form-control">
