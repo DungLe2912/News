@@ -3565,7 +3565,8 @@ input[type="email"] {
     position: fixed;
 }
 .menu-content ul {
-    background: #f2f4f5  ;   
+    background: #f2f4f5  ;
+
 }
 .menu-content ul li{
     border-bottom: 2px solid #e8e8e8;
@@ -3581,9 +3582,16 @@ input[type="email"] {
 
 .menu-content ul li a:hover{
     background-color: #CDE2CD;
+    text-decoration: none; 
    
 }
 
 .title-menu{
     margin-bottom: 10px;
+}
+
+#datepicker:focus,#exampleUsername:focus,
+#exampleInputPassword:focus,#exampleInputEmail1:focus,
+#exampleInputPhone:focus{
+    border-color:#fa8231;
 }
