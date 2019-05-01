@@ -3399,7 +3399,6 @@ a.slideCategoryButton.btn:hover {
 }
 
 .tag:hover {
-    font-size: 14px;
     color: white;
     background: #404040;
 }
@@ -3443,7 +3442,7 @@ a.btn.my-group-btn:hover::after {
 
 .w3layoutscontaineragileits {
     margin: 10px;
-    width: 40%;
+    width: 60%;
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.5);
     padding: 30px;
@@ -3558,14 +3557,14 @@ input[type="email"] {
 .side-bar{
     width: 200px;
     font-size: 50px;
-    font-family: "Poppins", sans-serif;
     float: left;
     margin-top: 50px;
     margin-left: 15px;
     position: fixed;
+    background: #404040;
 }
 .menu-content ul {
-    background: #f2f4f5  ;
+    background: #404040  ;
 
 }
 .menu-content ul li{
@@ -3595,3 +3594,59 @@ input[type="email"] {
 #exampleInputPhone:focus{
     border-color:#fa8231;
 }
+
+/* sidebar */
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+  }
+  
+  #sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    
+  }
+  
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+  }
+  .list-group-flush .list-group-item{
+      color: white;
+  }
+  .list-group-flush .list-group-item:hover{
+    color: white;
+}
+.list-group-flush .list-group-item:focus{
+    color: white;
+}
+  
+  #page-content-wrapper {
+    min-width: 100vw;
+  }
+  
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+  
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
+  
