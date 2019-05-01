@@ -2726,8 +2726,12 @@ blockquote .quote-name {
 }
 
 .single-widget-area {
-    position: relative;
+    position: absolute;
     z-index: 1;
+    top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .single-widget-area form input {
