@@ -2009,6 +2009,89 @@ input:focus {
     visibility: visible;
     right: 40px;
 }
+.share-info {
+    position: relative;
+    z-index: 1;
+}
+
+.share-info .sharebtn {
+    position: relative;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #ffffff;
+    background-color: #1a1a1a;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+}
+
+ .share-info .sharebtn i {
+    -webkit-transition-duration: 800ms;
+    -o-transition-duration: 800ms;
+    transition-duration: 800ms;
+}
+.share-info .sharebtn:hover {
+    background-color: #fa8231;
+}
+
+.share-info .all-share-btn {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    right: -200px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition-duration: 800ms;
+    -o-transition-duration: 800ms;
+    transition-duration: 800ms;
+}
+
+.share-info .all-share-btn a {
+    width: 40px;
+    height: 40px;
+    background-color: #fa8231;
+    color: #ffffff;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.share-info .all-share-btn a.facebook {
+    background-color: #4b6cd0;
+}
+
+.share-info .all-share-btn a.twitter {
+    background-color: #49a7f3;
+}
+
+.share-info .all-share-btn a.google-plus {
+    background-color: #de3939;
+}
+
+.share-info .all-share-btn a.instagram {
+    background-color: #bb8950;
+}
+
+.share-info .all-share-btn a:hover,
+ .share-info .all-share-btn a:focus {
+    color: #ffffff;
+    background-color: #1a1a1a;
+}
+
+.share-info:hover .sharebtn i {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.share-info:hover .all-share-btn {
+    opacity: 1;
+    visibility: visible;
+    right: 40px;
+}
+
 
 .single-catagory-post {
     position: relative;
@@ -3799,6 +3882,12 @@ table.table td a.edit {
     color: #10c469;
     text-align: center;
 }
+table.table td a.accept {        
+    width: 30px;
+    height: 30px;
+    color: #10c469;
+    text-align: center;
+}
 table.table td a.edit:hover {        
     width: 30px;
     height: 30px;
@@ -3895,3 +3984,54 @@ a.disabled {
   a.disabled i{
       color: gray;
   }
+/* modal */
+.accept-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    overflow: auto;
+    z-index: 999;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+} 
+  
+.close {
+    color: #aaaaaa;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+  }
+.modal-btn{
+    width: 100px;
+    height: 40px;
+    margin:20px;
+ }
+.modal-submit{
+    width: 100%;
+    height: auto;
+    display:flex;
+    justify-content: center;
+    line-height: 40px;
+    vertical-align: center;
+
+}
