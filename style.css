@@ -3560,7 +3560,7 @@ input[type="email"] {
     border: 2px solid #ddd;
     outline: none;
     margin-bottom: 26px;
-    color: #fff;
+    /* color: #fff; */
     font-family: 'Quicksand', sans-serif;
 }
 
