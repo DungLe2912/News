@@ -225,12 +225,23 @@
                                 </form>
                             </div>
                             <!-- Login -->
-                            <a href="sign-in.html" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i></a>
+                            <a id="login" href="sign-in.html" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i></a>
                             <!--Sign-in  -->
-                            <a href="sign-up.html" class="login-btn"><i class="fa fa-registered" aria-hidden="true"></i></a>
+                            <a id="regis" href="sign-up.html" class="login-btn"><i class="fa fa-registered" aria-hidden="true"></i></a>
+                            <!--User -->
+                            <div id="user" class="container">
+                                <div class="dropdown">
+                                 <a  href="sign-up.html" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i>Dung Le</a>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="edit-info.html">Edit profile</a>
+                                    <a id="writerpost" class="dropdown-item" href="submit-posts.html">Submit post</a>
+                                    <a id="editorpost" class="dropdown-item" href="editor-Management.html">Editor Management</a>
+                                    <a id="adminpost" class="dropdown-item" href="editor-Management.html">Admin Management</a>
+                                    <a id="logout" class="dropdown-item" href="index.html">Logout</a>
+                                  </div>
+                                </div>
+                                </div>      
 
-                            <!-- Submit Video -->
-                            <a href="submit-posts.html" class="submit-video"><span><i class="fa fa-cloud-upload"></i></span> <span class="video-text">Submit Posts</span></a>
                         </div>
                     </div>
                 </nav>

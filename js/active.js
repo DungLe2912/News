@@ -263,6 +263,7 @@
      $("#regis").show();
      $("#user").hide();
      if (typeof(Storage) !== "undefined") {
+
          $("#logout").click(function(){
              localStorage.setItem("logouted", "yes");
              localStorage.setItem("signined", "no");
@@ -270,17 +271,54 @@
          });
          $("#signin").click(function(){
              localStorage.setItem("signined", "yes");
+              if(("#exampleInputEmail1").val()=="admin"&&("#exampleInputPassword1").val()=="1")
+         {
+             localStorage.setItem("powerful", "admin");
+         }
+         else if(("#exampleInputEmail1").val()=="editor"&&("#exampleInputPassword1").val()=="1"){
+             localStorage.setItem("powerful", "editor");
+         }
+         else if(("#exampleInputEmail1").val()=="writer"&&("#exampleInputPassword1").val()=="1"){
+             localStorage.setItem("powerful", "writer");
+         }
+         else{
+             alert("Sai cmn tai khoan roi. Dang nhap lai di thang ngu :))");
+         }
+        
+             alert("ngu");
 
          });
          if(localStorage.getItem("logouted")=="yes"){
              $("#login").show();
              $("#regis").show();
              $("#user").hide();
+
          }
-         if(localStorage.getItem("signined")=="yes"){
+         if(localStorage.getItem("signined")=="yes"&&localStorage.getItem("powerful")=="admin"){
              $("#login").hide();
              $("#regis").hide();
              $("#user").show();
+             $("#writerpost").hide();
+             $("#editorpost").hide();
+         }
+         else if(localStorage.getItem("signined")=="yes"&&localStorage.getItem("powerful")=="editor"){
+             $("#login").hide();
+             $("#regis").hide();
+             $("#user").show();
+             $("#writerpost").hide();
+             $("#adminpost").hide();
+         }
+         else if(localStorage.getItem("signined")=="yes"&&localStorage.getItem("powerful")=="writer"){
+             $("#login").hide();
+             $("#regis").hide();
+             $("#user").show();
+             $("#editorpost").hide();
+             $("#adminpost").hide();
+         }
+         else{
+             $("#login").show();
+             $("#regis").show();
+             $("#user").hide();
          }
 
          
