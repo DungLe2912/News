@@ -258,4 +258,32 @@
         $("#economy").hide();
         $("#military").hide();
 
+        //JQuery for user show
+     $("#login").show();
+     $("#regis").show();
+     $("#user").hide();
+     if (typeof(Storage) !== "undefined") {
+         $("#logout").click(function(){
+             localStorage.setItem("logouted", "yes");
+             localStorage.setItem("signined", "no");
+
+         });
+         $("#signin").click(function(){
+             localStorage.setItem("signined", "yes");
+
+         });
+         if(localStorage.getItem("logouted")=="yes"){
+             $("#login").show();
+             $("#regis").show();
+             $("#user").hide();
+         }
+         if(localStorage.getItem("signined")=="yes"){
+             $("#login").hide();
+             $("#regis").hide();
+             $("#user").show();
+         }
+
+         
+        } 
+
 })(jQuery);
