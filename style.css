@@ -3998,12 +3998,12 @@ a.disabled {
 }
 .modal-content {
     position: absolute;
+    width: 50% !important;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 1rem 1.5rem;
-    width: 24rem;
     border-radius: 0.5rem;
 } 
   
@@ -4037,11 +4037,68 @@ a.disabled {
 }
 
 
-.dropdown:hover>.dropdown-menu {
-  display: block;
+/*dual select*/
+select.topic{
+    height: 500px;
 }
+select.category{
+    height: 500px ;
+}
+a.btnEdit{
+    background:#0397d6;
+    color: white;
+    padding:10px 15px ;
+    margin-left:5px;
+}
+a.btnEdit:hover{
+    color: white;
+    background: #1a1a1a;
+}
+a.btnRemove{
+    background:red;
+    color: white;
+    padding:10px 15px ;
+    margin-left:5px;
+}
+a.btnRemove:hover{
+    color: white;
+    background: #1a1a1a;
+}
+a.btnAdd{
+    background:#10c469;
+    color: white;
+    padding:10px 15px ;
+    margin-left:5px;
+}
+a.btnAdd:hover{
+    color: white;
+    background: #1a1a1a;
+}
+/**/
+.addUser{
+    display: flex;
+    justify-content: flex-start;
+}
+.addUser a.btn.btn-primary{
+    font-size: 14px;
+}
+.addUser a.btn.btn-primary:hover{
+    font-size: 14px;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
 
+
+<<<<<<< HEAD
 .dropdown>.dropdown-toggle:active {
   /*Without this, clicking will make it sticky*/
     pointer-events: none;
 }
+=======
+>>>>>>> cf9f6128c37c48822c7c65e6f1885a49c3ac1184
