@@ -4084,6 +4084,12 @@ a.btnAdd:hover{
 }
 .addUser a.btn.btn-primary:hover{
     font-size: 14px;
+    color: white;
+}
+select.form-control[multiple]
+{
+    width: 500px;
+    height: 500px;
 }
 .dropdown:hover>.dropdown-menu {
     display: block;
