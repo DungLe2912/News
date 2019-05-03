@@ -4036,6 +4036,7 @@ a.disabled {
 
 }
 
+
 /*dual select*/
 select.topic{
     height: 500px;
@@ -4084,4 +4085,13 @@ a.btnAdd:hover{
 .addUser a.btn.btn-primary:hover{
     font-size: 14px;
 }
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
+
 
