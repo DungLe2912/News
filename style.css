@@ -3560,7 +3560,7 @@ input[type="email"] {
     border: 2px solid #ddd;
     outline: none;
     margin-bottom: 26px;
-    color: #fff;
+    /* color: #fff; */
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -4084,6 +4084,12 @@ a.btnAdd:hover{
 }
 .addUser a.btn.btn-primary:hover{
     font-size: 14px;
+    color: white;
+}
+select.form-control[multiple]
+{
+    width: 500px;
+    height: 500px;
 }
 .dropdown:hover>.dropdown-menu {
     display: block;
