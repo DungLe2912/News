@@ -271,22 +271,22 @@
          });
          $("#signin").click(function(){
              localStorage.setItem("signined", "yes");
-              if(("#exampleInputEmail1").val()=="admin"&&("#exampleInputPassword1").val()=="1")
-         {
-             localStorage.setItem("powerful", "admin");
-         }
-         else if(("#exampleInputEmail1").val()=="editor"&&("#exampleInputPassword1").val()=="1"){
-             localStorage.setItem("powerful", "editor");
-         }
-         else if(("#exampleInputEmail1").val()=="writer"&&("#exampleInputPassword1").val()=="1"){
-             localStorage.setItem("powerful", "writer");
-         }
-         else{
-             alert("Sai cmn tai khoan roi. Dang nhap lai di thang ngu :))");
-         }
-        
-             alert("ngu");
-
+             if($("#exampleInputEmail1").val()=="admin"&&$("#exampleInputPassword1").val()=="1")
+             {
+                 localStorage.setItem("powerful", "admin");
+             }
+             else if($("#exampleInputEmail1").val()=="writer"&&$("#exampleInputPassword1").val()=="1")
+             {
+                 localStorage.setItem("powerful", "writer");
+             }
+             else if($("#exampleInputEmail1").val()=="editor"&&$("#exampleInputPassword1").val()=="1")
+             {
+                 localStorage.setItem("powerful", "editor");
+             }
+             else{
+                 alert("Nhap sai cmn tai khoan roi thang ngu");
+             }
+           
          });
          if(localStorage.getItem("logouted")=="yes"){
              $("#login").show();
