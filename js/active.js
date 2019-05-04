@@ -321,8 +321,157 @@
              $("#regis").show();
              $("#user").hide();
          }
+            
+  
+        }
+         $('#usercheck').hide();
+         $('#emailcheck').hide();
+         $('#passcheck').hide();
+         $('#repasscheck').hide();
+          var user_err =true;
+            var email_err = true;
+            var pass_err = true;
+            var repass_err = true;
 
-         
-        } 
+            $('#exampleInputUserName1').keyup(function(){
+                username_check();
+            });
 
+            function username_check()
+            {
+                var user_val = $('#exampleInputUserName1').val();
+                if(user_val.length ==''){
+                    $('#usercheck').show();
+                    $('#usercheck').html("Please Fill the username");
+                    $('#usercheck').focus();    
+                    $('#usercheck').css("color","red"); 
+                    user_err = false;
+                    return false;   
+                }
+                else{
+                    $('#usercheck').hide();
+                }
+
+                if((user_val.length < 5)||(user_val.length >20)){
+                    $('#usercheck').show();
+                    $('#usercheck').html("Username length must be between 5 and 20");
+                    $('#usercheck').focus();    
+                    $('#usercheck').css("color","red"); 
+                    user_err = false;
+                    return false;   
+                }
+                else{
+                    $('#usercheck').hide();
+                }
+            }
+
+            $('#exampleInputEmail1').keyup(function(){
+                email_check();
+            });
+
+            function email_check()
+            {
+                var email_val = $('#exampleInputEmail1').val();
+                if(email_val.length =='')
+                {
+                    $('#emailcheck').show();
+                    $('#emailcheck').html("Please Fill the email");
+                    $('#emailcheck').focus();    
+                    $('#emailcheck').css("color","red"); 
+                    email_err = false;
+                    return false;   
+                }
+                else{
+                    $('#emailcheck').hide();
+                }
+
+                var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                if(!re.test(email_val)){
+                    $('#emailcheck').show();
+                    $('#emailcheck').html("Email is invalid");
+                    $('#emailcheck').focus();    
+                    $('#emailcheck').css("color","red"); 
+                    email_err = false;
+                    return false;   
+                }
+                else{
+                    $('#emailcheck').hide();
+                }
+            }
+
+            $('#exampleInputPassword1').keyup(function(){
+                password_check();
+            });
+
+            function password_check()
+            {
+                var password_val = $('#exampleInputPassword1').val();
+
+                if(password_val.length ==''){
+                    $('#passcheck').show();
+                    $('#passcheck').html("Please Fill the password");
+                    $('#passcheck').focus();    
+                    $('#passcheck').css("color","red"); 
+                    pass_err = false;
+                    return false;   
+                }
+                else{
+                    $('#passcheck').hide();
+                }
+
+                if((password_val.length < 6)||(password_val.length >20)){
+                    $('#passcheck').show();
+                    $('#passcheck').html("Password length must be between 6 and 20");
+                    $('#passcheck').focus();    
+                    $('#passcheck').css("color","red"); 
+                    pass_err = false;
+                    return false;   
+                }
+                else{
+                    $('#passcheck').hide();
+                }
+            }
+
+            $('#exampleInputRetypePassword1').keyup(function(){
+                repassword_check();
+            });
+
+            function repassword_check(){
+                var repassword = $('#exampleInputRetypePassword1').val();
+                var password = $('#exampleInputPassword1').val();
+
+                if(repassword != password){
+                    $('#repasscheck').show();
+                    $('#repasscheck').html("Password are not matching");
+                    $('#repasscheck').focus();    
+                    $('#repasscheck').css("color","red"); 
+                    repass_err = false;
+                    return false;   
+                }
+                else{
+                    $('#repasscheck').hide();
+                }
+                
+            }
+
+            $('#signup').click(function(){
+                var user_err =true;
+                var email_err = true;
+                var pass_err = true;
+                var repass_err = true;
+
+                username_check();
+                email_check();
+                password_check();
+                repassword_check();
+
+                if((user_err == true) && (email_err == true) && (pass_err == true) && (repass_err==true)){
+                   return true;
+                }
+                
+                else {
+                   return false;
+                    
+                }
+            });
 })(jQuery);
