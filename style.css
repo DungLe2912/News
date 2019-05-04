@@ -4095,10 +4095,7 @@ a.btnAdd:hover{
   }
 
 
-<<<<<<< HEAD
 .dropdown>.dropdown-toggle:active {
   /*Without this, clicking will make it sticky*/
     pointer-events: none;
 }
-=======
->>>>>>> cf9f6128c37c48822c7c65e6f1885a49c3ac1184
