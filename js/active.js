@@ -284,7 +284,8 @@
                  localStorage.setItem("powerful", "editor");
              }
              else{
-                 alert("Nhap sai cmn tai khoan roi thang ngu");
+                 alert("Nhập sai cmn tài khoản rồi thằng ngu");
+                 localStorage.setItem("powerful", "ngu");
              }
            
          });
