@@ -284,7 +284,7 @@
                  localStorage.setItem("powerful", "editor");
              }
              else{
-                 alert("Nhập sai cmn tài khoản rồi thằng ngu");
+                 alert("Sai tài khoản mẫu");
                  localStorage.setItem("powerful", "ngu");
              }
            
