@@ -283,8 +283,12 @@
              {
                  localStorage.setItem("powerful", "editor");
              }
+             else if($("#exampleInputEmail1").val()=="subscriber"&&$("#exampleInputPassword1").val()=="1")
+             {
+                 localStorage.setItem("powerful", "subscriber");
+             }
              else{
-                 alert("Sai tài khoản mẫu");
+                 alert("Tài khoản không tồn tại!");
                  localStorage.setItem("powerful", "ngu");
              }
            
@@ -316,6 +320,14 @@
              $("#editorpost").hide();
              $("#adminpost").hide();
          }
+         else if(localStorage.getItem("signined")=="yes"&&localStorage.getItem("powerful")=="subscriber"){
+            $("#login").hide();
+            $("#regis").hide();
+            $("#user").show();
+            $("#writerpost").hide();
+            $("#editorpost").hide();
+            $("#adminpost").hide();
+        }
          else{
              $("#login").show();
              $("#regis").show();
